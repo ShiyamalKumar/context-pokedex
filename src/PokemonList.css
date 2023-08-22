@@ -1,0 +1,32 @@
+
+.pokemon-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .pokemon-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .pokemon-card img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .pokemon-card p {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .pokemon-card:hover {
+    transform: scale(1.05);
+  }
+  
